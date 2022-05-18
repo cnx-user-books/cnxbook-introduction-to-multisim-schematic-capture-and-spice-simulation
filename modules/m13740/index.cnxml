@@ -1,0 +1,78 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+<title>Exercise:  Instrumenting Simulated Circuits in National Instruments Multisim</title>
+<metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>d5c3903e-28e4-4a0a-9dd7-91b2dcf80826</md:uuid>
+</metadata>
+<content>
+<section id="id36918837">
+<title>Approximate time to complete: 20 minutes</title>
+<para id="id35635848">This exercise will demonstrate the
+interactive simulator, and virtual instruments. By the end of this
+exercise, users will be familiar with placing instruments, opening
+their front panels, and configuring various options.</para>
+</section>
+<section id="id36939683">
+<title>Objectives</title>
+<list list-type="bulleted" id="id28957092">
+<item>Learn how to place and connect virtual instruments.</item>
+<item>Gain experience configuring instruments.</item>
+</list>
+</section>
+<section id="id36814844">
+<title>Procedure</title>
+<list list-type="enumerated" id="id36474193"><item>Load circuit <link resource="40kFilter2.ms9"> 40kFilter2.ms9 </link>
+.  Refer to while performing steps 2
+- 4.</item>
+<item>Replace the Clock Source with a Function Generator. Once
+placed, double-click to open the instrument panel and adjust its
+settings as follows:</item>
+</list>
+<list list-type="bulleted" id="id36893944">
+<item>Waveform = sinewave</item>
+<item>Amplitude = 1 V</item>
+<item>Frequency = 40 kHz</item>
+</list>
+<list list-type="enumerated" id="id17433973">
+<item>Close the instrument panel.</item>
+<item>Attach the Bode plotter between the input and output nodes.
+Double-click to open the instrument and adjust its settings as
+follows, then simulate and observe the output:</item>
+</list>
+<list list-type="bulleted" id="id36944319">
+<item>Set Magnitude</item>
+<item>Horizontal I (Initial) = 1 kHz, F (Final) = 1 MHz</item>
+<item>Vertical I (Initial) = -50 dB, F (Final) = 10 dB</item>
+</list>
+<list list-type="enumerated" id="id35406678">
+<item>Attach an oscilloscope to monitor the input and output
+voltages.Double-click on the oscilloscope icon to adjust its
+settings as follows:</item>
+</list>
+<list list-type="bulleted" id="id35432383">
+<item>Set Timebase = 20 us/Div</item>
+<item>Channel A= 1 V/Div</item>
+<item>Channel B = 1 V/Div</item>
+</list>
+<list list-type="enumerated" id="id32282683">
+<item>The color of the wire segment connected to an instrument
+controls the color of the trace on the instrument display. Make
+sure that the wires from the output of the op-amp are blue. If they
+are not, then right-click on a wire segment and choose “Wire Color”
+to change the setting. Now, simulate and observe the output.</item>
+<item>Change the value of the Potentiometer (R3) by pressing “A” to
+increase the resistance and “Shift-A” to decrease the resistance
+during simulation. Observe the response on the oscilloscope. Note:
+The Bode Plot response will be updated only after you re-simulate
+the circuit.</item>
+</list>
+<figure id="id36693808">
+<media id="idm600576" alt=""><image src="../../media/Graphic1-29f5.png" mime-type="image/png"/></media>
+</figure>
+<list list-type="enumerated" id="id36918396">
+<item>While the simulation is still running, use the “Measurement
+Probe” to view the voltage levels in the circuit. It is found at
+the end of the instrument panel.</item>
+</list><code display="block" id="idm9167312"><link resource="40kFilter2_Complete.ms9"> SOLUTION </link>
+</code>
+</section>
+</content>
+</document>

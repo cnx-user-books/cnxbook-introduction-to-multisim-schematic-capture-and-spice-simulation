@@ -1,0 +1,125 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+<title>Generating Schematic Reports and Annotation in National Instruments Multisim</title>
+<metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>6f5ee7dd-9858-48e5-b4a0-25300b348d63</md:uuid>
+</metadata>
+<content>
+<section id="id10581284">
+<title>Schematic Reports and Annotation</title>
+<para id="id11032536">Multisim allows you to generate a number of
+reports: Bill of Materials (BOM), Component Detail Report, Netlist
+Report, Schematic Statistics, Spare Gates and the Cross Reference
+Report. A BOM lists the components used in your design and
+therefore provides a summary of the components needed to
+manufacture the circuit board. Information provided in the Bills of
+Materials include:</para>
+<list list-type="bulleted" id="id10605688">
+<item>quantity of each component needed.</item>
+<item>description, including the type of part (example: resistor)
+and value (example: 5.1 kohm).</item>
+<item>Reference Designator of each component.</item>
+<item>package or footprint of each component.</item>
+</list>
+<para id="id11102222">The Component Detail Report shows all
+information stored in the Multisim database for a particular
+component.</para>
+<para id="id9622463">The Netlist Report provides the following
+circuit connectivity information for each component:</para>
+<list list-type="bulleted" id="id5246502">
+<item>Net name.</item>
+<item>Page (filename).</item>
+<item>Pin (logical pin name).</item>
+</list>
+<para id="id10634179">The Cross Reference Report provides a
+detailed list of all components and their locations in the
+design.</para>
+<para id="id10742746">The Schematic Statistics Report provides the
+quantity of the following in a circuit:</para>
+<list list-type="bulleted" id="id10080534">
+<item>Components — total number of components. (Real components +
+virtual components).</item>
+<item>Real components — components that can be purchased.</item>
+<item>Virtual components — components that cannot be
+purchased.</item>
+<item>Gates — total number of gates used in the design.</item>
+<item>Nets — total number of connections between pins.</item>
+<item>Pins in nets.</item>
+<item>Unconnected pins.</item>
+<item>Total pins — pins in nets and unconnected pins.</item>
+<item>Pages.</item>
+<item>Hierarchical blocks — total number of hierarchical blocks,
+unique or otherwise. Instances of hierarchical blocks equals the
+number of copies of the same hierarchical block.</item>
+<item>Unique hierarchical blocks — total number of unique
+hierarchical blocks.</item>
+<item>Subcircuits — total number of subcircuits, unique or
+otherwise.</item>
+<item>Unique subcircuits.</item>
+</list>
+<para id="id10368012">The Spare Gates Report lists unused gates on
+multi-section components. Note: Multisim provides a gate optimizer
+which will automatically and efficiently pack multisection parts
+onto the minimum number of chips. To run the gate optimizer select
+Tools/Rename/Renumber Components and then select Gate
+Optimizer.</para>
+</section>
+<section id="id10403493">
+<title>Graphical Annotation</title>
+<para id="id9886399">Multisim provides an easy method for
+graphically annotating your circuits. The Graphic Annotation
+toolbar allows placement of the following items: text, lines,
+multilines, rectangles, ellipses, arcs, polygons, pictures, and
+comments. To place graphical elements without using the toolbar,
+right-click on the schematic and select Place Graphic.</para>
+<figure id="id10385311"><media id="idp2811680" alt=""><image src="../../media/Graphic1-c11d.png" mime-type="image/png"/></media>
+<caption> Graphical Annotation Toolbar </caption></figure>
+
+</section>
+<section id="id9941397">
+<title>Circuit Description Box</title>
+<para id="id10864469">In addition to adding text to a particular
+portion of a circuit, you can add general descriptions to your
+circuit using the Circuit Description Box. You can also place
+bitmaps, sound and video in the Circuit Description Box.</para>
+<para id="id9903185">The contents of the Circuit Description Box
+are viewed in the top pane of the Circuit Description Box window
+(select View/Circuit Description Box). To edit the contents of the
+Circuit Description Box, select Tools/Description Box
+Editor.</para>
+</section>
+<section id="id10937067">
+<title>Title Blocks</title>
+<para id="id9404199">A powerful title block editor allows you to
+create customized title blocks. If desired, a title block can be
+included on every page of your design.</para>
+<para id="id10428918">Various fields in the title block are
+automatically filled in depending upon the context and various
+document properties. When designing the title block, you choose one
+of the pre-defined fields or a custom field. You choose appropriate
+fonts depending upon your language of preference. To edit an
+existing, or to create a new title block, select Tools/Title Block
+Editor.</para>
+<para id="id6937428">Title blocks can include elements such as
+text, lines, arcs, Bezier curves, rectangles, ovals, arcs, bitmaps,
+and so on.</para>
+<para id="id10480577">To place a title block, select Place/Title
+Block. The title block can be automatically placed in any corner by
+right-clicking on the title block and selecting Move To. To
+populate fields of each title block, simply double-click the title
+block.</para>
+</section>
+<section id="id10500445">
+<title>Schematic Transfer to Ultiboard and Other Packages</title>
+<para id="id10733198">Multisim includes a single-click feature
+which will transfer the current design to an installed copy of
+Ultiboard. Select Transfer/Transfer to Ultiboardto initiate the PCB
+design process. Designs can be easily forward and back-annotated
+using the same Transfer menu.</para>
+<para id="id8504430">In addition to a transfer mechanism between
+Multisim and Ultiboard, designers also have the option to transfer
+designs to one of several other PCB layout packages. Note:
+Transferring designs to 3rd party layout packages may require
+matching Multisim components to components in the database of the
+chosen PCB layout program.</para>
+</section>
+</content>
+</document>

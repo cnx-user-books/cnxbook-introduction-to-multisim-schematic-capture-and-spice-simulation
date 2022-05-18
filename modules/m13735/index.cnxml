@@ -1,0 +1,165 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+<title>Electrical and Electronic Components Available in National Instruments Multisim</title>
+<metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>2394452d-be7f-4796-b9fe-7f3b8d75eb25</md:uuid>
+</metadata>
+<content>
+<section id="id8601953">
+<title>Components</title>
+<section id="id2895528">
+<title>Components Overview</title>
+<para id="id8653148">Components comprise the basis for any
+schematic. A component is any part that can be placed onto the
+schematic. Multisim defines two broad categories of parts: real and
+virtual. It is important to understand the difference between these
+parts, in order to fully utilize their advantages.</para>
+<para id="id8098106">Real components can be differentiated from
+virtual parts because real components have a specific value that
+cannot be changed, and a PCB footprint.</para>
+<para id="id7603756">Virtual components are simulation-only
+components, which can be assigned user-defined characteristics. For
+example, a virtual resistor can take on any resistance (such as
+3.86654 Ohms). Virtual components help designers to check
+calculations by simulating designs with precise component values.
+Virtual components can also be idealized components such as the
+4-pin Hex display shown in Figure 1.</para>
+<para id="id8601337">Multisim also provides other classifications
+of components: analog, digital, mixed-mode, animated, interactive,
+multi-section digital, electromechanical, and radio-frequency (RF)
+components.</para>
+<figure id="id9501926"><media id="idp584352" alt=""><image src="../../media/Graphic1-83e7.png" mime-type="image/png"/></media>
+<caption>
+Various Component Symbols:
+7-Segment Display, Diode D1, Voltage Source V1, NAND gate U2A,
+Microcontroller U3 and Transistor Q1
+</caption></figure>
+
+</section>
+<section id="id4637500">
+<title>Interactive Components</title>
+<para id="id15510752">Multisim provides a method for interacting
+with certain components that are placed on the schematic. Changes
+to these components will affect the simulation results on-the-fly.
+Components are controlled by pressing the key listed beside the
+component.</para>
+<para id="id6817259">For the components shown in Figure 2 below,
+pressing the A keywill increase the resistance of the potentiometer
+toward 100% of the shown value (1kΩ); to decrease the resistance,
+hold the Shift key then press the A key. Pressing the Spacebar will
+toggle the switch to be either closed or open.</para>
+<para id="id8254231">The keyboard shortcut key can be changed by
+double-clicking on the component, and choosing the desired key from
+the drop-down box as shown below.</para>
+<figure id="id9388677"><media id="idp3498192" alt=""><image src="../../media/Graphic2-ccaa.png" mime-type="image/png"/></media>
+<caption> Examples Interactive
+Components </caption></figure>
+
+</section>
+<section id="id9388410">
+<title>Component Characteristics</title>
+<para id="id12454328">The following fields are visible from the
+Component Browser.</para>
+<figure id="id7260177"><media id="idp2023040" alt=""><image src="../../media/Graphic3-8496.png" mime-type="image/png"/></media>
+<caption> Component Information </caption></figure>
+
+</section>
+<section id="id14931115">
+<title>The Component Browser</title>
+<para id="id7358777">The Component Browser is used to select
+components for placement onto the schematic. To access the
+Component Browser, click on any icon in the parts bin, or select
+Place/Component. The default keyboard shortcut to place a component
+is Ctrl-W.Double-click on the desired component to place it on the
+schematic. The component will “ghost” the mouse cursor until the
+left mouse button is clicked again to place the component.</para>
+<figure id="id9701491"><media id="idp353952" alt=""><image src="../../media/Graphic4-72f4.png" mime-type="image/png"/></media>
+<caption> The Parts Bin or Component Toolbar </caption></figure>
+
+<figure id="id9701684"><media id="idm5845344" alt=""><image src="../../media/Graphic5-fbdc.png" mime-type="image/png"/></media>
+<caption> The Component Browser </caption></figure>
+
+<para id="id15447788">To search this view, simply start typing the
+name of the desired component, and the browser will automatically
+display matching candidate parts. Optionally, for a more detailed
+search, click on the Search button.</para>
+<para id="id11448141">The Component Browser shows the current
+database in which the displayed parts are stored. Multisim
+organizes the parts by group, and family. The browser also shows
+the symbol, a description of the component in the Function field,
+the model, and the footprint / manufacturer.</para>
+<para id="id15405954">The wildcard character ‘*’can be used to
+match any set of characters. For example “LM*78” would match
+components “LM*AD” would return both “LM101AD” and “LM108AD”, among
+others.</para>
+<para id="id8654481">Note:Any component may have multiple models
+associated with it. Each model may account for varying physical
+characteristics of the component. For example, the LM358M opamp has
+five visible pins, but only three of them are used in one model,
+ignoring the power supply terminals. More information about models
+can be found by selecting the desired model from the Model
+Manuf.\ID field, and click on the Model button.</para>
+</section>
+<section id="id15397284">
+<title>Databases</title>
+<para id="id15397310">There are three levels of database provided
+by Multisim:</para>
+<list list-type="bulleted" id="id15397336">
+<item>The Master Database is read-only, and contains components
+supplied by Electronics Workbench.</item>
+<item>The User Database is private to the individual user logged
+onto the computer. It is used for components built by an individual
+that are not intended to be shared.</item>
+<item>The Corporate Database is used to store custom components
+that are intended to be shared across an organization. The
+Corporate Database can be shared on a network.</item>
+</list>
+<para id="id11448126">Database management tools are supplied in
+order to move components between databases, merge databases, and
+edit them. All the databases are divided into groups and then into
+families within those groups. When a designer chooses a component
+from the database and drops it onto the circuit, a copy of the
+component is placed onto the circuit. Any edits made to the
+component in the circuit do not affect the original database
+copy.</para>
+<para id="id8393002">Edits made to the component in the database do
+not affect the previously placed components, but will affect all
+subsequently placed components of that type. When a circuit is
+saved, component information is saved in the Multisim file. On
+load, the user has the option to keep the loaded parts as is, to
+make copies to place into their user or corporate database, or to
+update similarly-named components with the latest values from the
+database. Note: The Database Manager can be opened by selecting
+Tools/Database/Database Manager. To edit Master Database parts,
+copy them to the User or Corporate Database.</para>
+<figure id="id8393009"><media id="idp3814880" alt=""><image src="../../media/Graphic6-2c5c.png" mime-type="image/png"/></media>
+<caption> Database Manager </caption></figure>
+
+</section>
+<section id="id8392931">
+<title>Creating Custom Components</title>
+<para id="id8392905">Multisim includes the ability to create and
+edit components to satisfy the needs of any design. The two methods
+available are the Component Wizard, and the Component Properties
+dialog box.</para>
+<para id="id15388292">To access the Component Wizard, select
+Tools/Component Wizard. The component wizard allows designers to
+enter all pertinent component information, such as symbol, and
+SPICE model (Figure 7).</para>
+<para id="id8392640">To access the Component Properties dialog box,
+double-click on a placed component, click on the Value tab, and
+click the Edit Component in DB button (Figure 8).</para>
+<para id="id15396466">
+<figure id="id7358727"><media id="idp4431376" alt=""><image src="../../media/Graphic7-7618.png" mime-type="image/png"/></media>
+<caption> Component Wizard </caption></figure>
+</para>
+
+<para id="id15396517">
+<figure id="id15396540"><media id="idp2363248" alt=""><image src="../../media/Graphic8-87e5.png" mime-type="image/png"/></media>
+<caption> Component Properties Dialog Box </caption></figure>
+</para>
+
+<para id="id15396725">More details on creating custom components
+are available in the helpfiles.</para>
+</section>
+</section>
+</content>
+</document>

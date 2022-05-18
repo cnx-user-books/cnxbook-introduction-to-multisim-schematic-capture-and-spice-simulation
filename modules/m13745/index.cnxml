@@ -1,0 +1,145 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+<title>Interactive Schematic Capture and Layout in National Instruments Multisim</title>
+<metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>90b75e96-4eed-42e2-b5c7-37eca6f571dc</md:uuid>
+</metadata>
+<content>
+<section id="id7868444">
+<title>Schematic Capture in MultiSim</title>
+<section id="id7946250">
+<title>The Benefits of Integrated Capture and Simulation</title>
+<para id="id7102163">Multisim provides users with the unique
+ability to capture and simulate from within the very same
+integrated environment. The advantages of this approach are many.
+Users new to Multisim do not have to worry about sophisticated
+SPICE (Simulation Program with Integrated Circuit Emphasis) syntax
+and commands, while advanced users have easy access to all SPICE
+details.</para>
+<para id="id7102167">Multisim makes capturing schematics easier and
+more intuitive than ever. A spreadsheet view allows users to easily
+modify characteristics of any number of components simultaneously:
+from PBC footprint to SPICE model. Modeless operation provides the
+most efficient way of placing components and wiring them together.
+Working with both analog and digital multisection components is
+intuitive and simple.</para>
+<para id="id5335649">In addition to traditional SPICE analyses,
+Multisim allows users to intuitively connect virtual instruments to
+their schematics. Virtual instruments make it fast and easy to view
+interactive simulation results by replicating the real-world
+environment.</para>
+<para id="id8039168">Multisim also provides special components
+known as interactive parts which can be modified while a simulation
+is running. Interactive parts such as switches and potentiometers,
+will immediately and accurately affect the results of
+simulation.</para>
+<para id="id6796221">When the need arises for more advanced
+analysis, Multisim delivers over 15 sophisticated analyses. Some
+examples of analyses include AC, Monte Carlo, Worst Case, and
+Fourier. Provided natively within the Multisim environment is a
+powerful Grapher, which allows the customized viewing of simulation
+data and analyses.</para>
+<para id="id6794804">The integrated capture and simulation
+environment provided by Multisim is a natural fit for any circuit
+designer, and will save both time and frustration throughout the
+entire circuit design process.</para>
+</section>
+<section id="id6794835">
+<title>The Multisim Environment</title>
+<section id="id6794860">
+<title>Introducing the Multisim Environment</title>
+<para id="id5696488">Multisim’s user interface consists of the
+basic elements, illustrated in Figure 1 below.</para>
+<para id="id5696567">
+<figure id="id5696616"><media id="idp5841712" alt=""><image src="../../media/Graphic1-23bb.png" mime-type="image/png"/></media>
+<caption> The MultiSim Environment </caption></figure>
+</para>
+
+</section>
+<section id="id6794871">
+<title>The Design Toolbox</title>
+<para id="id5697124">The Design Toolbox is used to manage various
+elements in the schematic. The Visibility tab lets you choose which
+layers to display on the current sheet on the workspace. The
+Hierarchy tab contains a tree that shows the dependencies of the
+files in the design that you have open. The Project tab displays
+information about the current project. Users can add files to the
+existing folders of the current project, control access to files,
+and archive designs.</para>
+</section>
+<section id="id6796205">
+<title>Configuring global options</title>
+<para id="id6795203">Global options allow users to configure
+specifics of the Multisim environment. They can be modified by
+accessing the preferences dialog box. Choose Options/Global
+Preferences. The Preferences dialog box appears, offering you the
+following tabs:</para>
+<para id="id6795712">• Paths—where you can change the filepaths for
+the databases and other settings.</para>
+<para id="id6795736">• Save—where you set up Auto-backup timing and
+whether you want to save simulation data with instruments.</para>
+<para id="id6794715">• Parts—where you set up component placement
+mode and the symbol standard (ANSI or DIN). You also set up default
+digital simulation settings.</para>
+<para id="id5696841">• General—where you set up selection rectangle
+behavior, mouse wheel behavior, bus wiring and auto-wiring
+behavior.</para>
+<figure id="id6794933"><media id="idp328288" alt=""><image src="../../media/Graphic2-badd.png" mime-type="image/png"/></media>
+	<caption> Various Global Preferences </caption></figure>
+
+</section>
+<section id="id5415286">
+<title>Configuring sheet options</title>
+<para id="id5333337">The Sheet Properties dialog box is used to set
+up the preferences for each sheet. These preferences are saved with
+the circuit file so that if the circuit is opened on another
+computer, it will use the same settings.</para>
+<para id="id6795193">The sheet specific settings are arranged in
+the following tabs:</para>
+<para id="id5332520">• Circuit—where you set the color scheme and
+the display properties of workspace text.</para>
+<para id="id5332692">• Workspace—where you set the sheet size and
+properties.</para>
+<para id="id5697482">• Wiring—where you set the wire and bus
+options.</para>
+<para id="id5696912">• Font—where you select the font, font size
+and style for text elements on the circuit.</para>
+<para id="id5696967">• PCB—where you set up options for your
+printed circuit board.</para>
+<para id="id5697021">• Visibility—where you enable and disable
+custom annotation layers.</para>
+<para id="id5697097">Consult the Multisim User Guide or Multisim
+helpfile for a detailed description of each sheet property.</para>
+<figure id="id6796690"><media id="idp6870432" alt=""><image src="../../media/Graphic3-18bf.png" mime-type="image/png"/></media>
+<caption> Various Sheet Properties </caption></figure>
+
+</section>
+<section id="id7997100">
+<title>Customizing the user interface</title>
+<para id="id7997106">The Multisim user interface is highly
+customizable. Customizations are context sensitive. Toolbars may be
+docked in various positions and orientations. The contents of the
+toolbars may be customized. New toolbars may be created. The menu
+system is fully customizable, including all pop-up menus for the
+various object types.</para>
+<para id="id7997116">As well, the keyboard shortcut system is
+customizable. This allows for key combinations to be assigned to
+any command that may be placed in a menu or on a toolbar.</para>
+<para id="id7997123">Note: To avoid interfering with interactive
+simulation, it is recommended that users only assign commands to
+key combinations (such as Ctrl-E).</para>
+<para id="id7997134">For example, the toolbars and docking windows
+may be re-configured as you move from a circuit sheet to a
+description sheet.</para>
+<para id="id7997141">To customize the user interface, select
+Options/Customize User Interface. Using the Customize dialog, users
+can create or modify toolbars, assign or change keyboard shortcuts,
+customize and create menus, and modify the way the user interface
+appears.</para>
+<para id="id7997153"><figure id="id7997196">
+		<media id="idm124528" alt=""><image src="../../media/Graphic4-e3ff.png" mime-type="image/png"/></media>
+<caption> Customize Dialog Box </caption>
+	</figure></para>
+</section>
+</section>
+</section>
+</content>
+</document>

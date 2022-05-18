@@ -1,0 +1,39 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+<title>Creating Circuits in Multisim</title>
+<metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>1ffdb21d-6d16-4a4d-94f9-19508e8f10d5</md:uuid>
+</metadata>
+<content>
+<section id="id10690061">
+<title>Circuit Wizards</title>
+<para id="id10657207">Multisim provides several circuit wizards,
+which can aid designers by quickly producing circuits to match
+specifications. The circuits wizards provided are listed in . To
+use a circuit wizard, select Tools/Circuit Wizards.</para>
+<figure id="id10184501"><media id="idm469472" alt=""><image src="../../media/Graphic1-74df.png" mime-type="image/png"/></media>
+<caption> Circuit Wizards </caption></figure>
+
+<figure id="id9742883"><media id="idp240144" alt=""><image src="../../media/Graphic2-8692.png" mime-type="image/png"/></media>
+<caption> Filter Wizard Dialog Box </caption></figure>
+
+<para id="id10733550">Use the 555 Timer Wizard to build astable and
+monostable oscillator circuits that use the 555 timer.</para>
+<para id="id8621586">The Multisim Filter Wizard helps design
+numerous types of filters by entering the specifications into its
+fields.</para>
+<para id="id10578624">The Common Emitter BJT Amplifier Wizard helps
+design common emitter amplifier circuits by entering the desired
+specifications into its fields. The Multisim MOSFET Amplifier
+Wizard helps design MOSFET amplifier circuits. The Multisim Opamp
+Wizard helps design the following opamp circuits. Users can enter
+the desired specifications in its fields:</para>
+<list list-type="bulleted" id="id10885910">
+<item>Inverting Amplifier.</item>
+<item>Non-inverting Amplifier.</item>
+<item>Difference Amplifier.</item>
+<item>Inverted Summing Amplifier.</item>
+<item>Non-inverted Summing Amplifier.</item>
+<item>Scaling Adder.</item>
+</list>
+</section>
+</content>
+</document>

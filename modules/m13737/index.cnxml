@@ -1,0 +1,224 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+<title>Exercise:  Analysis of Circuit Simulations in National Instruments Multisim</title>
+<metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>08cbd890-5d48-4491-92a0-f8b794320d10</md:uuid>
+</metadata>
+<content>
+<section id="id3204299">
+<title>Exercise: Working with Analyses in Circuit Simulation</title>
+<section id="id30774829">
+<title>Approximate time to complete: 35 minutes</title>
+<para id="id30243146">In this exercise, users will further explore
+the characteristics of the bandpass filter using analyses. Users
+will use AC, Transient, Fourier, and Monte Carlo Analyses and learn
+about analyses settings and how to configure the Grapher.</para>
+</section>
+<section id="id32570223">
+<title>Objectives</title>
+<list list-type="bulleted" id="id5301417">
+<item>Compare AC Analysis to a Bode plot</item>
+<item>Compare Transient Analysis with the Oscilloscope</item>
+<item>Use expressions in analyses</item>
+<item>Understand how to set up and run Fourier Analysis</item>
+<item>Understand how to set up tolerances and run a Monte Carlo
+Analysis</item>
+<item>Learn how to format the output in the Grapher</item>
+</list>
+</section>
+<section id="id32168263">
+<title>Procedure</title>
+<list list-type="enumerated" id="id33499398"><item>Load circuit <link resource="40kFilter3.ms9"> 40kFilter3.ms9. </link>
+ Notice that a load resistance
+has been added to the circuit (Rload) on the output of the filter.
+This is to facilitate an output power analysis.</item>
+<item>Run the Simulation to get the Bode plotter and oscilloscope
+traces. Double-click the Bode plotter and Oscilloscope icons to
+open the instrument panels. Start the simulation by clicking on the
+lightning bolt button, or by pressing F5. Stop the simulation after
+the Bode plot is displayed. Close the instrument panels by clicking
+on the Close button on each instrument. Note:You can also open and
+close instrument panels by double-clicking on the instrument
+icons.</item>
+<item>Open the settings for an AC Analysis (Simulate/Analyses/AC
+Analysis). 
+<list list-type="enumerated" id="id5135814">
+<item>On the Output tab, remove all variables from the Selected
+variables for analysis column on the right hand side of the dialog
+box. To do this, select all variables in the column and then click
+Remove.</item>
+<item>Select the $output variable and click Add.</item>
+<item>The test point will move to the right side under Selected
+Variables for Analysis.</item>
+</list></item>
+<item>Verify the output parameters and simulate.</item>
+<item>Click Simulate.</item>
+</list>
+<para id="id17395940">The Grapher appears with multiple tabs. The
+last three include: one for the oscilloscope, one for the Bode
+plotter, and one for the AC Analysis. Compare the AC Analysis and
+the Bode Plotter graphs.</para>
+<list list-type="enumerated" id="id2891214">
+<item>Perform the steps below to adjust the graph properties of the
+AC Analysis. These general steps can be used for adjusting any
+graph.</item>
+<item>Left-click on the Magnitude graph (top graph) to make it
+active.</item>
+</list>
+<para id="id31188628">A small arrow on the left side of the window
+indicates which graph is active.</para>
+<list list-type="enumerated" id="id33779614"><item>Right-click on the left axis to access the Graph Properties
+option.
+<list list-type="enumerated" id="id6322525">
+<item>Select the Left Axis tab.</item>
+<item>Enter the following information in the Left Axis tab:</item>
+<item>In the Scale box, choose Decibels.</item>
+<item>In the Label dialog, type Gain (dB).</item>
+<item>In the Axis box, choose Enabled and a Pen Size of 1.</item>
+<item>In the Range box, choose a minimum range of –50 and a maximum
+range of 10.</item>
+</list>
+</item>
+</list>
+<figure id="id5571453"><media id="idp9505728" alt=""><image src="../../media/Graphic1-f1e7.png" mime-type="image/png"/></media>
+
+<caption> Setting the Graph Properties for the Magnitude </caption></figure>
+
+<list list-type="enumerated" id="id16917400">
+<item>
+<list list-type="enumerated" id="id3498418">
+<item>
+<list list-type="enumerated" id="id30812842">
+<item>In the Divisions section, choose Total Ticks of 4, Minor
+Ticks of 2 and Precision of 3.</item>
+<item>Click the Apply button.</item>
+</list>
+</item>
+<item>Select the Bottom Axis tab.
+<list list-type="enumerated" id="id5301572">
+<item>Select Logarithmic Scale. In the Frequency Range, type 1000
+for minimum and 1000000 for maximum.</item>
+<item>Click Apply, then OK.</item>
+</list></item>
+</list>
+</item>
+<item>Adjust the bottom (Phase) graph by setting the Graph
+Properties as shown in the following figure. Then click on the
+Bottom Axis tab and change the range to 1000 to 1000000.</item>
+</list>
+<figure id="id33796960"><media id="idp7005520" alt=""><image src="../../media/Graphic2-655a.png" mime-type="image/png"/></media>
+
+<caption> Setting the Graph Properties for the Phase </caption></figure>
+
+<para id="id33051351">Now compare the outputs of the Bode plot and
+the AC analysis by directly overlaying the magnitude traces.</para>
+<list list-type="enumerated" id="id31914260">
+<item>Left-click on the magnitude plot of the Bode plot to select
+it.
+<list list-type="enumerated" id="id17675451">
+<item>Select Overlay Traces from the Tools menu.</item>
+<item>Pick Graph_1 of the AC Analysis (this should be the second
+last entry in the list).</item>
+</list></item>
+</list>
+<para id="id7352796">A new page will open in the Grapher that
+displays the two traces overlaid.</para>
+<para id="id7352800">You can zoom in to see the region where both
+traces exist. Press and hold the left mouse button as you drag a
+box around the peak of the graph.</para>
+<figure id="id33311467"><media id="idp9851360" alt=""><image src="../../media/Graphic3-4d1c.png" mime-type="image/png"/></media>
+
+<caption> Zooming in on Overlaid Traces </caption></figure>
+
+<para id="id31645667">Notice the results are slightly different.
+This is because the two methods used different sampling rates. You
+can control the sampling rate when you set up the instrument or the
+analysis.</para>
+<list list-type="enumerated" id="id5314163">
+<item>Investigate how to make precise measurements in the Grapher.
+<list list-type="enumerated" id="id31417510">
+<item>Select the Bode Plot Tab in the Grapher.</item>
+<item>Turn on the cursors by selecting Show/Hide Cursors from the
+Viewmenu.</item>
+<item>Select one of the cursors and right-click on it.</item>
+<item>Select Go to next Y_MAX to find the peak.</item>
+<item>Select Set Y_Value =&gt;and enter the value that is 3 less
+than the max. This will give you one of the -3dB points.</item>
+<item>Read the resulting value in the numeric display box.</item>
+</list></item>
+<item>Perform Transient Analysis (Simulate/Analyses/Transient
+Analysis). 
+<list list-type="enumerated" id="id30243508">
+<item>Set the analysis settings as shown below. Note: You may need
+to expand the dialog box by clicking the More button.</item>
+</list></item>
+</list>
+<figure id="id32909904"><media id="idp10279296" alt=""><image src="../../media/Graphic4-a0e3.png" mime-type="image/png"/></media>
+
+<caption> Setting Up the Transient Analysis </caption></figure>
+
+<list list-type="enumerated" id="id32521722">
+<item>
+<list list-type="enumerated" id="id33144917">
+<item>Switch to the Outputtab.</item>
+<item>Select test point nodes $input and $output as the Selected
+Variables for Analysis.</item>
+<item>Click the Simulate button. Compare the graph with the
+oscilloscope display.</item>
+</list>
+</item>
+</list>
+<para id="id32651014">You will now set up to run a Fourier
+analysis.</para>
+<list list-type="enumerated" id="id14389708">
+<item>Open the instrument panel of the function generator and
+change the waveform to a square wave.
+<list list-type="enumerated" id="id7266883">
+<item>Choose Simulate/Analyses/Fourier Analysis.</item>
+<item>Select both Estimate buttons to set the sampling options and
+transient Analysis options automatically.</item>
+<item>Switch to the Outputvariablestab.</item>
+<item>Select $input and $output as the Selected Variables for
+Analysis.</item>
+<item>Click Simulate.</item>
+</list></item>
+</list>
+<para id="id9423513">Note the output is presented on two separate
+pages in the Grapher.</para>
+<para id="id28752226">Optional Section (time permitting):</para>
+<para id="id28752230">Perform a Monte Carlo Analysis,
+(Simulate/Analyses/Monte Carlo).</para>
+<list list-type="enumerated" id="id32460774">
+<item>From the front dialog box, select Add a new tolerance
+function.
+<list list-type="enumerated" id="id33365293">
+<item>In Parameter Type, choose Device Parameter.</item>
+<item>In Device Type select Capacitor. Choose cc1.</item>
+<item>In the Tolerance section, select Percent. For Tolerance Type,
+assign 20 and click Accept.</item>
+</list></item>
+</list>
+<figure id="id33235149"><media id="idp9950784" alt=""><image src="../../media/Graphic5-8aa9.png" mime-type="image/png"/></media>
+
+<caption> Setting Device Tolerances </caption></figure>
+
+<list list-type="enumerated" id="id17308976">
+<item>
+<list list-type="enumerated" id="id33387263">
+<item>Select Add a new tolerance again, and repeat the above
+procedure. Select cc2 this time.</item>
+<item>Now configure the Analysis Parameters.</item>
+<item>Click on the Analysis Parameters tab.</item>
+<item>Set it up to run an AC Analysis, with 5 runs, and set the
+Output variable to $output.</item>
+<item>Click on the Edit Analysis button and then configure the
+settings for the AC analysis.</item>
+<item>Set the FSTART to 1 kHz, the FSTOP to 1 MHz, the Number of
+points per decade to 100 and the Vertical scale to Decibel.</item>
+<item>Click the Simulate button.</item>
+</list>
+</item>
+</list>
+</section><code display="block" id="idp176272"><link resource="40kFilter3_Complete.ms9"> SOLUTION </link>
+</code>
+</section>
+</content>
+</document>

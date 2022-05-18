@@ -1,0 +1,88 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+<title>Simulating Circuits using the SPICE in National Instruments Multisim</title>
+<metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>3371e6b8-104a-4e4e-89b3-f42c5599b11a</md:uuid>
+</metadata>
+<content>
+<section id="id9221835">
+<title>Simulation Overview</title>
+<para id="id8509050">While a good design naturally follows from
+quality schematics, truly great designs can made with the help of
+simulation. Multisim provides powerful simulation capabilities and
+features which are simply unavailable in other EDA packages.</para>
+<para id="id9306700">Simulating a design can result in fewer design
+iterations and less chance of errors in the prototype stage of
+product development. When a design is simulated at the front end of
+the design process, the number of design cycles can be
+significantly reduced.</para>
+<para id="id7747189">In addition to a world-class SPICE simulator,
+Multisim also includes XSPICE simulation, enabling fast simulation
+of digital other components.</para>
+<para id="id8894285">Patented co-simulation techniques allow
+designers to simulate VHDL modeled components along with the rest
+of a circuit. With MultiMCU, certain microcontrollers can be
+simulated in the very same mixed-mode environment. MultiMCU is not
+available for all versions of Multisim.</para>
+</section>
+<section id="id6795254">
+<title>Using the Interactive Simulator</title>
+<para id="id9267024">To begin a simulation, ensure that the circuit
+has all the necessary prerequisites. All circuits must include a
+ground reference, and a source. Once the circuit is ready for
+simulation, click the Run / Stop Simulation button 
+<figure id="id8616888"><media id="idp1650416" alt=""><image src="../../media/Graphic1-b5df.png" mime-type="image/png"/></media>
+<caption> Run/Stop Simulation Button </caption></figure>or press F5. An interactive circuit simulation will
+begin.</para>
+<para id="id8543337">The settings that are used for interactive
+simulation can be viewed and modified by selecting
+Simulate/Interactive Simulation Settings.Figure 1 below illustrates
+some of the settings available for interactive simulation. The
+default end time for the simulation is 1e+30 seconds, or around
+3.17e+30 billion years. By default time steps will be generated
+automatically.</para>
+<figure id="id8813922"><media id="idp6582304" alt=""><image src="../../media/Graphic2-0cd7.png" mime-type="image/png"/></media>
+<caption> Interactive Simulation Settings </caption></figure>
+
+<para id="id8910138">To view results of this simulation, the
+measurement probe 
+<figure id="id7810327"><media id="idm6102848" alt=""><image src="../../media/Graphic3-7883.png" mime-type="image/png"/></media>
+<caption> The Measurement Probe </caption></figure>can be used dynamically. Simply click on the probe icon
+and the mouse cursor will turn into a probe. The mouse can then be
+moved over any net to view the following metrics:</para>
+<list list-type="bulleted" id="id9323291">
+<item>Voltage (instantaneous, peak-to-peak, RMS, and DC).</item>
+<item>Frequency.</item>
+</list>
+<para id="id9241292">Virtual instruments can also display
+simulation results. Virtual instruments are covered later in this
+section.</para>
+<para id="id9140219">Multisim also provides more traditional SPICE
+analyses, which are run through the Grapher/Analyses List toolbar
+button, 
+<figure id="id9174869"><media id="idp3448960" alt=""><image src="../../media/Graphic4-abd4.png" mime-type="image/png"/></media>
+<caption> Grapher/Analyses List toolbar button </caption></figure> or by selecting Simulate/Analyses. Analyses are
+described in greater detail later in this section.</para>
+</section>
+<section id="id9312602">
+<title>Handling Simulation Errors</title>
+<para id="id8817021">Sooner or later, even the most experienced
+SPICE users will run into a SPICE simulation error. Multisim
+includes a simulation advisor to help discover and fix the source
+of troubling errors.</para>
+<para id="id9092142">When an error message appears such as the one
+in Figure 5, click the Adviser button to access the available
+help.</para>
+<figure id="id6358228"><media id="idp2421856" alt=""><image src="../../media/Graphic6-2abe.png" mime-type="image/png"/></media>
+<caption> Simulation Error Log Dialog Box </caption></figure>
+
+<figure id="id9023415"><media id="idm564784" alt=""><image src="../../media/Graphic5-0d21.png" mime-type="image/png"/></media>
+<caption> Simulation Advisor </caption></figure>
+
+<para id="id9174878">Two of the most often encountered errors are
+timestep errors, and singular matrix errors. below provides the
+most common solutions to these simulation errors.</para>
+<figure id="id9092160"><media id="idp2156656" alt=""><image src="../../media/Graphic7-ff51.png" mime-type="image/png"/></media>
+<caption> Common Solutions to Simulation Errors </caption></figure>
+
+</section>
+</content>
+</document>

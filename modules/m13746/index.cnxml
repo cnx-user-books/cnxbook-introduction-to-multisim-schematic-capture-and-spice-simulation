@@ -1,0 +1,139 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+<title>Objectives for the National Instruments Multisim Course</title>
+<metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>3783ab5a-6c47-4d4f-9fa5-7c28763ae545</md:uuid>
+</metadata>
+<content>
+<section id="id7281204">
+<title>Introduction</title>
+<section id="id9050502">
+<title>Course Objectives and Overview</title>
+<para id="id6773906">This course will provide you with an
+introduction to Multisim's many features. At the end of the three
+hours, you should have a basic understanding of the user interface
+(UI), schematic capture and simulation. You will also see how
+Multisim fits into the broader PCB design flow (Figure 1 and Figure
+2).</para>
+<para id="id10905080">The course is split into sections, each
+containing associated exercises to help solidify the concepts
+presented. There is also an Appendix, which provides some direction
+on how to integrate Multisim with National Instruments’ products to
+create a truly integrated benchtop platform for design and
+verification.</para>
+</section>
+<section id="id9399122">
+<title>Course Materials</title>
+<para id="id12371914">In order to successfully complete this
+course, you will need the following:</para>
+<list list-type="bulleted" id="id12511100">
+<item>Multisim Software.</item>
+<item>Multisim User Guide and helpfiles (available in soft copies
+installed with the software).</item>
+<item>Associated circuits (associated circuits found on the CD in
+the back of this book).</item>
+</list>
+</section>
+<section id="id10968547">
+<title>The Electronics Workbench Portfolio</title>
+<figure id="id12508216"><media id="idp85920" alt=""><image src="../../media/Graphic1-9621.png" mime-type="image/png"/></media>
+	<caption> Electronics Workbench Product
+Flow </caption>
+</figure>
+
+<section id="id12343305">
+<title>Multicap</title>
+<para id="id12417362">Multicap 9 is the industry’s most intuitive
+and powerful schematic capture program. Multicap’s innovative and
+timesaving features, including modeless operation, powerful
+autowiring and a comprehensive database organized into logical
+parts bins on your desktop, allow designs to be captured almost as
+fast as they can be conceptualized. Repetitive tasks are optimized,
+leaving you freer to create, test and ultimately perfect your
+designs, resulting in superior products and minimizing
+time-to-market.</para>
+</section>
+<section id="id10405322">
+<title>Multisim</title>
+<para id="id12148377">Multisim, the world’s only interactive
+circuit simulator, allows you to design better products in less
+time. Multisim includes a completely integrated version of
+Multicap, making it the ideal tool for capturing schematics and
+then instantly simulating circuits.</para>
+<para id="id12148382">Multisim 9 also offers integration with
+National Instruments LabVIEW and SignalExpress, allowing you to
+tightly integrate design and test.</para>
+</section>
+<section id="id9468547">
+<title>Ultiboard</title>
+<para id="id7454986">Ultiboard has been carefully designed to
+maximize your productivity. By optimizing the most common
+repetitive tasks such as part and trace placement, the number of
+keystrokes and mouse movements required to lay out any design has
+been dramatically reduced.</para>
+<para id="id11546066">Ultiboard handles today’s higher speed
+designs with ease using constraint driven layout. Innovative
+features such as Real-Time design rule checking, “Push &amp; Shove”
+components &amp; traces, component nudging with trace
+rubberbanding, “Follow-me” trace editing and an Automatic
+Connection machine ensure that you rapidly complete an error-free
+board.</para>
+</section>
+<section id="id12349476">
+<title>Ultiroute for Professional Customers</title>
+<para id="id8166684">For all but the most basic PCBs, the density
+and complexity of today’s designs make manual component and trace
+placement techniques impractical. For these designs, Electronics
+Workbench offers Ultiroute — a state-of-the-art autorouting and
+autoplacement tool.</para>
+<para id="id9053952">Ultiroute ensures high circuit performance and
+lower production costs for these demanding projects by uniquely
+combining the best of gridless (shape-based) and grid-based
+routing.</para>
+</section>
+</section>
+<section id="id10962042">
+<title>Integrated Design and Validation with National
+Instruments</title>
+<figure id="id10955284"><media id="idp1207376" alt=""><image src="../../media/Graphic2-3130.png" mime-type="image/png"/></media>
+<caption> The Integrated Design Flow </caption></figure>
+
+<section id="id11545400">
+<title>LabVIEW</title>
+<para id="id8530755">NI LabVIEW is the graphical development
+environment for creating flexible and scalable test, measurement,
+and control applications rapidly and at minimal cost. With LabVIEW,
+engineers and scientists interface with real-world signals, analyze
+data for meaningful information, and share results and
+applications. Regardless of experience, LabVIEW makes development
+fast and easy for all users.</para>
+</section>
+<section id="id12404191">
+<title>SignalExpress</title>
+<para id="id6099560">SignalExpress is interactive software for
+quickly acquiring, comparing, automating, and storing measurements.
+Use SignalExpress to streamline your exploratory and automated
+measurement tasks for electronics design, validation, and
+test.</para>
+<para id="id9044744">SignalExpress introduces an innovative
+approach to configuring your measurements using intuitive
+drag-and-drop steps that do not require code development.</para>
+</section>
+<section id="id3054923">
+<title>NI ELVIS</title>
+<para id="id10645365">National Instruments Educational Laboratory
+Virtual Instrumentation Suite (NI ELVIS) is a LabVIEW-based design
+and prototyping environment for university science and engineering
+laboratories. NI ELVIS consists of LabVIEW-based virtual
+instruments, a multifunction data acquisition device, and a
+custom-designed benchtop workstation and prototyping board. This
+combination provides a ready-to-use suite of instruments found in
+all educational laboratories. Because it is based on LabVIEW and
+provides complete data acquisition and prototyping capabilities,
+the system is ideal for academic coursework, from lower-division
+classes to advanced project-based curricula. Curriculum
+applications include electronics design, communications, controls,
+mechatronics, instrumentation, and data acquisition.</para>
+</section>
+</section>
+</section>
+</content>
+</document>

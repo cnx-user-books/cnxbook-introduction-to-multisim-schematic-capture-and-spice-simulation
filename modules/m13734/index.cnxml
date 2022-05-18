@@ -1,0 +1,94 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+<title>Electrical and Electronic Component Manipulation in National Instruments Multisim</title>
+<metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>5e3e7462-9f12-4f1b-9fb9-40d9d0f4dc63</md:uuid>
+</metadata>
+<content>
+<section id="id9459023">
+<title>Component Placement, Rotation, Selection and Wiring</title>
+<section id="id9459076">
+<title>Placement, Rotation, and Selection</title>
+<para id="id9458061">Once parts have been selected from their
+respective database, it is time to place them onto the schematic,
+and wire them together. Double-clicking on a component in the
+browser will attach that component to the cursor. This behavior is
+known as “ghosting”. Ghosting helps guide users when placing
+components anywhere on the schematic by left-clicking at the
+desired location.</para>
+<para id="id9458065">Components can also be rotated while ghosting,
+and any time after placement. To rotate a part while ghosting,
+press Ctrl-R. Ctrl-R will also work when a placed component is
+selected. Placed components can also be rotated by right-clicking
+on them and selecting 90 Clockwise or 90 CounterCW.</para>
+<figure id="id9459063"><media id="idp7901776" alt=""><image src="../../media/Graphic1-2e4b.png" mime-type="image/png"/></media>
+<caption> Component Rotation </caption></figure>
+
+<figure id="id9454197"><media id="idp10486960" alt=""><image src="../../media/Graphic2-1620.png" mime-type="image/png"/></media>
+<caption> Replacing Components </caption></figure>
+
+<para id="id9454991">To select a component, simply-left click on
+it. To select multiple components, click and drag to create a
+selection around the desired components. A dashed line indicates
+that a component is selected. Individual elements of a symbol can
+also be selected, such as the component value and reference
+designator. To select these, left-click on the desired text or
+graphic element.</para>
+<para id="id9453728">Holding the Shift key while selecting allows
+multiple components to be selected or de-selected.</para>
+<para id="id9454884">Components can be replaced by right-clicking
+on them then selecting Replace Component(s) from the right-click
+menu. Users can then select the replacement components from the
+newly opened component browser. Multisim will connect the new
+component to the same nets as the original component.</para>
+</section>
+<section id="id9454889">
+<title>Wiring</title>
+<para id="id9246597">Multisim provides modeless operation — the
+action performed by the mouse cursor is dependent on the cursor’s
+location. There is no need to select a tool, or mode when working
+with Multisim. The cursor will change depending on what object is
+underneath it. describes the different icons that the mouse cursor
+will display.</para>
+<para id="id9455307">When the cursor is over a pin or terminal of a
+component, that component can easily be wired by left-clicking.
+When the cursor is over an existing wire and near a pin or terminal
+the net can easily be re-wired.</para>
+<para id="id9455424">Left-click on the terminal to begin wiring,
+and to finish the wire, left-click on the destination
+terminal.</para>
+<para id="id9455448">When a wire is placed, Multisim will
+automatically assign it a net number. Net numbers increase
+sequentially, beginning with 1. Ground nets are always numbered 0 —
+a requirement of the underlying SPICE simulator. To change a net
+number, or assign it a logical name instead, simply double-click on
+the wire.</para>
+<figure id="id9455873"><media id="idp8605392" alt=""><image src="../../media/Graphic3-bfe9.png" mime-type="image/png"/></media>
+<caption> Modeless Mouse Cursors </caption>
+</figure>
+
+<figure id="id9366803"><media id="idp7676416" alt=""><image src="../../media/Graphic4-d6bd.png" mime-type="image/png"/></media>
+<caption> Naming Nets </caption></figure>
+
+</section>
+<section id="id9453172">
+<title>Autowiring by Touching Pins</title>
+<para id="id9453179">Multisim also allows auto-connection of pins
+to wires, and pins to pins. To automatically connect a component to
+existing nets or pins, simply place that component so that its pins
+are touching an existing net or pin.</para>
+<figure id="id9458243"><media id="idp5341904" alt=""><image src="../../media/Graphic5-809b.png" mime-type="image/png"/></media>
+	<caption> Autowiring by Touching Pins </caption></figure>
+
+</section>
+<section id="id9458292">
+<title>Autoconnect Passives</title>
+<para id="id9458298">Multisim provides the ability to place a
+component in-line with an existing wire or set of wires. To
+automatically split an existing wire around a component, simply
+place that component in-line with the wire (Figure 6).</para>
+<figure id="id9457796"><media id="idp5813088" alt=""><image src="../../media/Graphic6-79f3.png" mime-type="image/png"/></media>
+<caption> Autoconnect Passives </caption></figure>
+
+</section>
+</section>
+</content>
+</document>

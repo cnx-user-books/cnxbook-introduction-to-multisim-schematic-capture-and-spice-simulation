@@ -1,0 +1,113 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+<title>Creating and Using Sub-Circuits in National Instruments Multisim</title>
+<metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>3dbddf63-6b22-4370-af92-6ed49f62b33a</md:uuid>
+</metadata>
+<content>
+<section id="id8107906">
+<title>Sub-circuits and Hierarchical Blocks</title>
+<para id="id11150908">Multisim provides the ability to handle
+increasingly complex designs. In addition to multi-sheet designs,
+users can create sub-circuits (SC), and hierarchical blocks (HB) to
+modularize repetitive circuits, or to abstract sophisticated
+designs.</para>
+<para id="id10733472">Subcircuits are useful for compacting
+existing designs that would be best kept in a single file.
+Hierarchical blocks are better suited for design reuse because they
+are stored in separate files and can be accessed for other
+designs.</para>
+<para id="id11145132">Hierarchical blocks and subcircuits are
+functionally identical; the only difference is in how their
+contents are stored on disk.</para>
+<para id="id10908585">Hierarchical blocks and subcircuits can be
+created using two methods, the first method is to highlight an
+existing section of a circuit, and select Place/Connectors/HB/SC
+Connector. The second method is described below.</para>
+</section>
+<section id="id9931984">
+<title>To place a new hierarchical block (2nd method):</title>
+<list list-type="enumerated" id="id10476294">
+<item>Select Place/New Hierarchical Block and enter a
+filename.</item>
+</list>
+<figure id="id10472930"><media id="idp19280" alt=""><image src="../../media/Graphic1-fc7d.png" mime-type="image/png"/></media>
+<caption> Hierarchical Block Properties Dialog Box </caption></figure>
+
+<para id="id10834122">or</para>
+<list list-type="enumerated" id="id11160929"><item>Click on Browse, navigate to the folder where you would like
+to save the hierarchical block, enter a name and click Save. You
+are returned to the Hierarchical Block Properties dialog
+box.</item>
+	<item>Enter the number of pins desired and click OK. A “ghost”
+image of the new hierarchical block appears. Click where you want
+the hierarchical block to appear.</item>
+	<item>Double-click on the new hierarchical block and select Edit
+HB/SC from the Hierarchical Block/Subcircuit dialog box that
+displays. A circuit window that contains only the entered pins
+displays.</item>
+	<item>Place and wire components as desired in the new hierarchical
+block.</item>
+	<item>Wire the hierarchical block into the circuit.</item>
+	<item>Save the circuit.</item>
+</list>
+<para id="id10269259">Note: If you move or re-name a hierarchical
+block relative to the main circuit, Multisim will not be able to
+find it. A dialog box will ask you to provide the new location for
+the hierarchical block.</para>
+<para id="id10971694">To place an existing hierarchical block from
+a file, select Place/Hierarchical Block from file and follow the
+same procedure.</para>
+</section>
+<section id="id11164069">
+<title>To place a new subcircuit:</title>
+<list list-type="enumerated" id="id10744045">
+<item>Select Place/New Subcircuit. The Subcircuit Name dialog box
+appears.</item>
+</list>
+<figure id="id10807972"><media id="idm941984" alt=""><image src="../../media/Graphic2-4c86.png" mime-type="image/png"/></media>
+<caption> Subcircuit Name Dialog Box </caption></figure>
+
+<list list-type="enumerated" id="id6091283">
+<item>Enter the name you wish to use for the subcircuit, for
+example, “PowerSupply” and click OK. Your cursor changes to a
+“ghost” image of the subcircuit indicating that the subcircuit is
+ready to be placed.</item>
+<item>Click on the location in the circuit where you want the
+subcircuit placed (you can move it later, if necessary). The
+subcircuit appears in the desired location on the circuit window as
+an icon with the subcircuit name inside it.</item>
+<item>Double-click on the new subcircuit and select Edit HB/SC from
+the Hierarchical Block/Subcircuit dialog box that displays. An
+empty circuit window appears.</item>
+<item>Place and wire components as desired in the new hierarchical
+block.</item>
+<item>Select Place/Connectors/HB/SC Connector, and place and wire
+the connector as desired. Repeat for any other required Connectors.
+When you return to the main circuit, the symbol for the subcircuit
+will include pins for the number of connectors that you
+added.</item>
+<item>Wire the subcircuit into the circuit.</item>
+</list>
+</section>
+<section id="id11161335">
+<title>Replacing Components with Hierarchical Blocks or
+Subcircuits</title>
+<para id="id10346498">Multisim allows users to easily replace
+existing components with a hierarchical block or subcircuit. Simply
+select the components which comprise the desired subcircuit or
+hierarchical block, and select Place/Replace by Hierarchical
+Blockor Place/Replace by Subcircuit.</para>
+</section>
+<section id="id10400631">
+<title>Spreadsheet View</title>
+<para id="id6666891">The Spreadsheet View provides a global
+perspective on object properties. It allows fast advanced viewing
+and editing of parameters including component details such as
+footprints, Reference Designators, attributes and design
+constraints.</para>
+<para id="id10808475">The Spreadsheet View can also be used to
+modify groups of components at a time. The view can be sorted by
+any column in either ascending or descending order. You can also
+export the contents to Microsoft Excel® for further reports.</para>
+</section>
+</content>
+</document>

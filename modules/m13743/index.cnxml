@@ -1,0 +1,147 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+<title>Instrumenting a Circuit Simulation in National Instruments Multisim</title>
+<metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>449af2f7-0cc3-4d53-8e7d-3e335b9a7587</md:uuid>
+</metadata>
+<content>
+<section id="id8485872">
+<title>Instrumenting a Simulation in MultiSim</title>
+<para id="id9191120">Virtual instruments are components in Multisim
+which model real-world bench-top instruments. Examples of virtual
+instruments in Multisim include Oscilloscopes, Function Generators,
+Network Analyzers, and Bode Plotters.</para>
+<para id="id9406388">Virtual instruments provide designers with an
+easy and intuitive method for interacting with their circuits as
+they would in a testing or prototyping phase.</para>
+<para id="id6231894">In addition to the provided virtual
+instruments, designers with familiar with National Instruments
+LabVIEW can create their own custom instruments from scratch. For
+example, one could create a custom noise generator to model
+electromagnetic interference.</para>
+<para id="id9092103">Custom virtual instruments written in NI
+LabVIEW can also acquire real-world data and use the data to drive
+simulations, and can send generated data to analog output hardware,
+allowing simulated data to control real-world devices. The LabVIEW
+development suite is required to create custom LabVIEW instruments,
+but not necessary to run existing LabVIEW based instruments.</para>
+<para id="id9304098">To place a virtual instrument, select the
+desired instrument from the Instruments toolbar (Figure 1). To view
+the front panel of the instrument, double-click on the instrument
+icon. Make connections to the terminals of the instrument icon as
+you would to any other component.</para>
+<para id="id9366901">Multisim also provides designers with
+simulated benchtop instruments. These are instruments such as the
+Tektronix TDS 2024 Oscilloscope. They will look and operate exactly
+according to the manufacturers’ user manuals.</para>
+<figure id="id9110790"><media id="idm90224" alt=""><image src="../../media/Graphic1-2889.png" mime-type="image/png"/></media>
+<caption> Instruments Toolbar </caption></figure>
+
+<para id="id9456382">A single circuit can have multiple instruments
+attached to it, including (for most tiers) multiple instances of
+the same instrument. In addition, each circuit window can have its
+own set of instruments. Each instance of any instrument is
+configured and connected independently.</para>
+<para id="id9249263">An overview of the more common instruments is
+included in this section. For more detailed information on how to
+use each instrument, consult the Multisim User Guide or
+helpfile.</para>
+<section id="id9460167">
+<title>Multimeter</title>
+<para id="id8618695">Use the multimeter to measure AC or DC voltage
+or current, and resistance or decibel loss between two nodes in a
+circuit. The multimeter is auto-ranging, so a measurement range
+does not need to be specified. Its internal resistance and current
+are preset to near-ideal values, which can be changed.</para>
+<figure id="id6235199"><media id="idm474288" alt=""><image src="../../media/Graphic2-d272.png" mime-type="image/png"/></media>
+<caption> Multimeter Schematic Symbol </caption></figure>
+
+<figure id="id8942440"><media id="idm7190976" alt=""><image src="../../media/Graphic3-ab87.png" mime-type="image/png"/></media>
+<caption> Multimeter Front Panel </caption></figure>
+
+</section>
+<section id="id9453408">
+<title>Function Generator</title>
+<para id="id9453416">The function generator is a voltage source
+that supplies sine, triangular or square waves. It provides a
+convenient and realistic way to supply stimulus signals to a
+circuit. The waveform can be changed and its frequency, amplitude,
+duty cycle and DC offset can be controlled. The function
+generator's frequency range is great enough to produce conventional
+AC as well as audio- and radio-frequency signals.</para>
+<para id="id9453427">The function generator has three terminals
+through which waveforms can be applied to a circuit. The common
+center terminal provides a reference level for the signal.</para>
+<figure id="id8942751"><media id="idm1936976" alt=""><image src="../../media/Graphic4-b366.png" mime-type="image/png"/></media>
+<caption> Function Generator Schematic Symbol </caption></figure>
+
+<figure id="id9444217"><media id="idm1825360" alt=""><image src="../../media/Graphic5-aae6.png" mime-type="image/png"/></media>
+<caption> Function Generator Front Panel </caption></figure>
+
+</section>
+<section id="id9221035">
+<title>Oscilloscopes</title>
+<para id="id9221042">Multisim includes several varieties of
+oscilloscopes. All of the scopes can be controlled like real-world
+oscilloscopes. Horizontal timing and vertical voltages parameters
+can be adjusted. Triggering levels, and types are also selectable.
+Data from the Multisim-exclusive oscilloscopes is available in the
+Grapher after the interactive simulation has completed by selecting
+View/Grapher.</para>
+<para id="id9221053">Multisim provides the following
+oscilloscopes:</para>
+<list list-type="bulleted" id="id9443990">
+<item>2-Channel.</item>
+<item>4-Channel.</item>
+<item>Agilent 54622D Mixed Signal Oscilloscope.</item>
+<item>Tektronix TDS 2024 Four Channel Digital Storage
+Oscilloscope.</item>
+</list>
+<figure id="id9444019"><media id="idm49024" alt=""><image src="../../media/Graphic6-d677.png" mime-type="image/png"/></media>
+<caption> Oscilloscope Schematic Symbol </caption></figure>
+
+<figure id="id9401837"><media id="idm7540000" alt=""><image src="../../media/Graphic7-b676.png" mime-type="image/png"/></media>
+<caption> Oscilloscope Front Panel </caption></figure>
+
+<figure id="id9351809"><media id="idp1117616" alt=""><image src="../../media/Graphic8-99dd.png" mime-type="image/png"/></media>
+<caption> Tektronix Oscilloscope Schematic Diagram </caption></figure>
+
+<figure id="id9268827"><media id="idm8655584" alt=""><image src="../../media/Graphic9.png" mime-type="image/png"/></media>
+<caption> Tektronix Oscilloscope Front Panel </caption></figure>
+
+</section>
+<section id="id9451698">
+<title>Bode Plotter</title>
+<para id="id9324175">The bode plotter displays the relative phase
+or magnitude response of an input and output signal. This is
+especially useful when characterizing the bandwidth of filter
+circuits.</para>
+<figure id="id9324186"><media id="idm1335104" alt=""><image src="../../media/Graphic10.png" mime-type="image/png"/></media>
+<caption> Function Generator Schematic Symbol </caption></figure>
+
+<figure id="id9145329"><media id="idm7843504" alt=""><image src="../../media/Graphic11.png" mime-type="image/png"/></media>
+<caption> Bode Plotter Front Panel </caption></figure>
+
+</section>
+<section id="id9149259">
+<title>Spectrum Analyzer</title>
+<para id="id9149265">The spectrum analyzer is used to measure
+amplitude versus frequency. This instrument is capable of measuring
+a signal's power and frequency components, and helps determine the
+existence of harmonics in the signal.</para>
+<para id="id9242915">The spectrum analyzer displays its
+measurements in the frequency domain rather than the time domain.
+Usually the reference frame in signal analysis is time. In that
+case, an oscilloscope is used to show the instantaneous value as a
+function of time. Sometimes a sine waveform is expected but the
+signal, rather than being a pure sinusoidal, has a harmonic on it.
+As a result, it is not possible to measure the waveform's level. If
+the same signal is displayed on a spectrum analyzer, its amplitude
+is displayed, along with its frequency components, that is, its
+fundamental frequency and any harmonics it may contain.</para>
+<figure id="element-947"><media id="idp476128" alt=""><image src="../../media/Graphic12.png" mime-type="image/png"/></media>
+	<caption> Spectrum Analyzer Schematic Symbol </caption>
+</figure><figure id="element-96"><media id="idm8184944" alt=""><image src="../../media/Graphic13.png" mime-type="image/png"/></media>
+<caption> Spectrum Analyzer Front Panel </caption></figure>
+</section>
+</section>
+</content>
+</document>

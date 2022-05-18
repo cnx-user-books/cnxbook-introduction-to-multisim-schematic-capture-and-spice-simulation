@@ -1,0 +1,81 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+<title>Creating LabVIEW Instruments to Instrument Circuit Simulations in National Instruments Multisim</title>
+<metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>1983a9ff-f8be-4669-a9fa-dc7458431076</md:uuid>
+</metadata>
+<content>
+<section id="id9613284">
+<title>Creating LabVIEW Instruments in MultiSim</title>
+<para id="id9613259">Multisim ships with four different virtual NI
+LabVIEW instruments: a microphone, speaker, signal generator, and
+signal analyzer. The symbols are shown in Figure 1 and the speaker
+front panel is shown in Figure 2.</para>
+<para id="id9613400">Microphone - Records audio from the computer
+sound device and outputs the sound data as a signal source.</para>
+<para id="id9613452">Speaker - Plays input signal using the
+computer sound device.</para>
+<para id="id9613502">Signal Generator - Generates and outputs a
+sine, triangle, square, or sawtooth wave.</para>
+<para id="id9613531">Signal Analyzer - Displays time-domain data,
+auto power spectrum, or running average of input signal.</para>
+<figure id="element-790"><media id="idm662496" alt=""><image src="../../media/Graphic1-6bc4.png" mime-type="image/png"/></media>
+<caption> NI LabVIEW Instrument Symbols </caption></figure>
+<figure id="element-852"><media id="idp5523792" alt=""><image src="../../media/Graphic2-d7e0.png" mime-type="image/png"/></media>
+<caption> Sample NI LabVIEW Front Panel </caption></figure><para id="id9615290">Custom instruments can be created using the NI
+LabVIEW graphical development environment. Instruments that are
+created using NI LabVIEW can take advantage of the full
+functionality of the NI LabVIEW development system including data
+acquisition, instrument control, mathematical analysis, and so
+on.</para>
+<para id="id9615342">For example, you can create an instrument that
+acquires data from the real world using a National Instruments data
+acquisition device or modular instrument. Multisim will then use
+that data as a signal source for circuit simulation.</para>
+<para id="id9573296">You can also create an instrument that
+displays simulation data simultaneously with multiple measurements
+(running average and power spectrum, for example) made from that
+simulation data.</para>
+<para id="id9614613">NI LabVIEW instruments can be either input
+instruments or output instruments. Input instruments receive
+simulation data for display or processing. Output instruments
+generate data to use as a signal source in simulation. A NI LabVIEW
+instrument cannot be both an input and output instrument.</para>
+<para id="id9612502">Additionally, input and output instruments
+behave differently. Input instruments continuously receive
+simulation data from Multisim while simulation is active.</para>
+<para id="id9613217">In contrast, at the beginning of circuit
+simulation, output instruments will first generate a finite amount
+of data and return that data to Multisim. Multisim will then use
+that data for circuit simulation. Output instruments do not
+continuously generate data while simulation is running. To cause an
+output instrument to generate new data, you must stop and restart
+simulation.</para>
+<para id="id9612507">Output instruments allow the user or creator
+of the instrument to determine whether the instrument repeats the
+output data. The LabVIEW instrument must be configured to repeat
+its output data periodically, or else the simulator will assume the
+output is 0V once it has no data remaining from the instrument.
+Alternatively, if you configure the instrument and repeat the
+output data, the instrument will loop and repeat its output
+periodically until the simulation has stopped.</para>
+<para id="id9614766">Input instruments allow the user or creator of
+the instrument to set a sampling rate. This sampling rate is the
+rate at which the instrument receives data from Multisim. This
+sampling rate is analogous to the sampling rate you would set for a
+physical data acquisition device or modular instrument that
+acquires data from the real world. You should observe the Nyquist
+sampling theorem when choosing a sampling rate for your instrument.
+Note that the higher the value of the sampling rate, the slower
+simulation will run.</para>
+<para id="id9614771">To create and modify NI LabVIEW instruments,
+you must have the NI LabVIEW 8.0 (or later) Development
+System.</para>
+<para id="id9613295">To use NI LabVIEW instruments, you must have
+the NI LabVIEW Run-Time Engine installed on your computer. The
+version of this Run-Time Engine must correspond to the version of
+the NI LabVIEW Development System used to create the
+instrument. The Multisim installer includes the NI LabVIEW
+Run-Time Engine 8.0 as part of the Electronics Workbench Shared
+Components installation.</para>
+</section>
+</content>
+</document>

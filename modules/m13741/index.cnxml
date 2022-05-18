@@ -1,0 +1,68 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+<title>Exercise:  Introducing the National Instruments Multisim Environment</title>
+<metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>a8fb045c-9155-4683-a040-1cc3fef96b06</md:uuid>
+</metadata>
+<content>
+
+<section id="id7990443">
+<title>Approximate time to complete: 10 minutes</title>
+<para id="id7919952">The purpose of this exercise is to familiarize
+yourself with the Multisim environment. You will have the chance to
+explore the sheet and global options, as well as examine the
+various toolbars and menu items available.</para>
+</section>
+<section id="id7919970">
+<title>Objectives</title>
+<list list-type="bulleted" id="id7990687">
+<item>Become familiar with the general Multisim interface.</item>
+<item>Become familiar with configuring Multisim workspace
+parameters.</item>
+</list>
+</section>
+<section id="id7920344">
+<title>Procedure</title>
+<list list-type="enumerated" id="id7920357"><item>Launch Multisim
+<list list-type="enumerated" id="id7920372"><item>Select File/OpenSamples, and open <link resource="AMPMOD.ms9"> AMPMOD.ms9 </link>.</item>
+
+
+			<item>Experiment with the different views that Multisim provides:
+<list list-type="enumerated" id="id7920410">
+					<item>Select View/Spreadsheet to toggle the spreadsheet
+view.</item>
+					<item>Browse the Nets, Components,and PCB Layerstabs.</item>
+					<item>How many uniquely numbered nets are there?__________</item>
+				</list></item>
+			<item>Select View/Circuit Description Box.This is where designers
+can view detailed information about their design. To edit the
+contents, select Tools/Description Box Editor.</item>
+			<item>Select View/Design Toolbox.This view gives designers insight
+into the files, sub-circuits and other elements of a given
+design.</item>
+		</list></item>
+	<item>Experiment with Global Preferences and Sheet Properties. 
+<list list-type="enumerated" id="id7918700">
+			<item>Select Options/Sheet Properties.
+<list list-type="enumerated" id="id7918713">
+					<item>Try toggling on and off the grid in the Workspace tab (to
+view the changes, click OK or Apply).</item>
+					<item>Try switching the colors of the environment in the Circuittab
+(to view the changes, click OK or Apply).</item>
+				</list></item>
+			<item>Select Options/Global Preferences.
+<list list-type="enumerated" id="id7918773">
+					<item>Enable the Auto-backup feature in the Save tab.</item>
+					<item>Toggle on or off the Return to Component Browser check box in
+the Parts tab according to your personal preference.</item>
+				</list></item>
+		</list></item>
+	<item>Examine the settings under the Generaltab. What is the
+default Selection Rectangle mode?</item>
+	<item>If time permits, continuing experimenting with the Multisim
+environment. Try to place an arbitrary component onto the
+schematic.</item>
+	<item>Close the schematic by clicking File/Close.</item>
+</list>
+<para id="id7918855">End of Exercise</para><code display="block" id="idm2099504"><link resource="AMPMOD.ms9"> AMPMOD.ms9 </link></code>
+</section>
+</content>
+</document>

@@ -1,0 +1,83 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+<title>Exercise:  Finding and Placing Components in National Instruments Multisim</title>
+<metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>5a8ebd46-32ea-4049-8d49-e2d53a455f17</md:uuid>
+</metadata>
+<content>
+<section id="id35481704">
+<title>Approximate time to complete: 10 minutes</title>
+<para id="id31262313">This exercise has been designed to introduce
+users to the component browser. By the end of this exercise, you
+should be able to open the component browser, search and find
+components that you need, and learn more information about those
+components using the various fields of the browser.</para>
+</section>
+<section id="id36793502">
+<title>Objectives</title>
+<list list-type="bulleted" id="id32371456">
+<item>Learn how to use the component browser to locate desired
+components.</item>
+<item>Become familiar with the information that the component
+browser provides.</item>
+</list>
+</section>
+<section id="id36881423">
+<title>Procedure</title>
+<list list-type="enumerated" id="id36843980">
+<item>Open a new schematic window (File/New/Schematic
+Capture).</item>
+<item>Bring up the component browser by clicking on the Sources
+button of the Parts Bin (or Components Toolbar).</item>
+</list>
+<figure id="id28955761">
+<media id="idp1931040" alt=""><image src="../../media/Graphic1-173e.png" mime-type="image/png"/></media>
+</figure>
+<list list-type="enumerated" id="id36693331">
+<item>Locate and place a Groundsymbol onto the schematic. It is
+found in the POWER_SOURCES Family.</item>
+<item>Use the Searchtool to locate the Analog Devices OP297AZ.
+<list list-type="enumerated" id="id35460151">
+<item>From within the component browser, click Search.</item>
+<item>Type “OP297AZ” into the Component field, when you locate the
+part click OK. Do not place the component yet.</item>
+<item>How many different varieties of this Opamp are in your
+database?__________</item>
+</list></item>
+</list>
+<para id="id36869756">(Hint:Try including a wildcard ‘*’ in your
+search: “OP297*”)</para>
+<list list-type="enumerated" id="id37046313">
+<item>
+<list list-type="enumerated" id="id37062847">
+<item>How many sections does this chip have? __________</item>
+</list>
+</item>
+</list>
+<para id="id37062738">(Hint: Sections are lettered from A-Z)</para>
+<list list-type="enumerated" id="id36693237">
+<item>
+<list list-type="enumerated" id="id36893722">
+<item>Should you place the opamp, you will have the option of
+choosing section A or B. You do not need to place the opamp at this
+time.</item>
+</list>
+</item>
+</list>
+<figure id="id36947683">
+<media id="idm1355904" alt=""><image src="../../media/Graphic2-48d2.png" mime-type="image/png"/></media>
+</figure>
+<list list-type="enumerated" id="id36735913">
+<item>
+<list list-type="enumerated" id="id32620889">
+<item>Use the Search tool to locate the 74S04D Hex Inverter.</item>
+</list>
+</item>
+<item>When you place the inverter, you are given the option of
+placing any of the six inverters. Place the A gate. Notice that you
+now have the option of placing a new chip, or continuing to place
+gates of the existing U1.</item>
+<item>Place another “A” gate. What is the default reference
+designator for this new inverter? ________</item>
+</list>
+</section>
+</content>
+</document>

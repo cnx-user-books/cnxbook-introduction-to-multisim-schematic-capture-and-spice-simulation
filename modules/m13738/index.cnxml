@@ -1,0 +1,59 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+<title>Exercise:  Drawing A Schematic in National Instruments Multisim</title>
+<metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>149b06ea-48d8-4ca2-9b97-f52695c0fb72</md:uuid>
+</metadata>
+<content>
+<section id="id7622654">
+<title>Exercise: Drawing a Schematic in MultiSim</title>
+<section id="id7622684">
+<title>Approximate time to complete: 20 minutes.</title>
+<para id="id7622711">This exercise provides a general introduction
+to Multisim’s schematic capture. You will build and wire a basic
+circuit in Multisim using a variety of means to access parts,
+experiment with the wiring and run a basic simulation.</para>
+</section>
+<section id="id7622823">
+<title>Objectives</title>
+<list list-type="bulleted" id="id7612995">
+<item>Understand the difference between real, virtual, ideal, and
+interactive parts.</item>
+<item>Build and wire a basic circuit (including virtual
+wiring).</item>
+<item>Become familiar with and set wiring options.</item>
+</list>
+</section>
+<section id="id7613116">
+<title>Procedure</title>
+<list list-type="enumerated" id="id7613142">
+<item>Build your own version of circuit 40kFILTER1_Complete.ms9 as
+pictured below. Select the required components from the Master
+Database (Place/Component) and the In-Use List. Set component
+values as identified below. Note: Components R1, R2 and C2 are all
+virtual parts.</item>
+</list>
+<figure id="id7583095"><media id="idm6558144" alt=""><image src="../../media/Graphic1-bdba.png" mime-type="image/png"/></media>
+
+<caption> Bandpass Filter </caption></figure>
+
+<list list-type="enumerated" id="id7559950">
+<item>To wire your circuit, point at a component terminal so that
+you see the cursor changes to crosshairs and left-click. Move the
+pointer (while dragging the wire) to the second component terminal
+and left-click to terminate.</item>
+<item>Using the Replace function by right clicking on the R2,
+choose Replace Component(s) and substitute the virtual resistor
+(R2) with a real resistor (Basic/Resistor) of your choice.</item>
+<item>Double-click on the virtual components to see how they can be
+used to set variable parameters.</item>
+<item>Rotate and move a component within the circuit to see how
+movement of components affects the wiring. Components can also be
+rotated while being placed from the database.</item>
+<item>Select the virtual capacitor from the In-Use List and place
+it between Points A and B in the circuit. Notice the how it is
+automatically connected, and has a capacitance of 270 pF.</item>
+</list>
+</section><code display="block" id="idm7370704"><link resource="40kFilter1_Complete.ms9"> SOLUTION </link>
+</code>
+</section>
+</content>
+</document>

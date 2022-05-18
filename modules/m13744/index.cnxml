@@ -1,0 +1,101 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+<title>Integrated Design with Multisim and Other National Instruments Products</title>
+<metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>25165916-59b4-48ef-a66a-7db626d5d0d8</md:uuid>
+</metadata>
+<content>
+<section id="id10960167">
+<title>Integrated Design with Other National Instruments
+Products</title>
+<section id="id10893916">
+<title>LabVIEW</title>
+<para id="id10340535">National Instruments LabVIEW is a graphical
+programming environment that can be used to automate test and
+measurement functions, for the purpose of testing and validating
+designs. Multisim data saved in .LVM or .TDM format can be easily
+loaded into LabVIEW using express Virtual Instrument (VI)
+technology. Simulation data can then be overlaid on top of measured
+results to quickly and easily verify designs.</para>
+<section id="id9603469">
+<title>Loading .LVM and .TDM Data Files</title>
+<para id="id7433665">To load Multisim simulated data that were
+saved in a .LVM or .TDM file, use the Read from Measurement File
+Express VI. This VI is located in the Programming/File IOpalette.
+For help on this file, consult the LabVIEW help file. The Express
+VI can be configured to read either .LVM or .TDM files.</para>
+<figure id="id10997288"><media id="idp363664" alt=""><image src="../../media/Graphic1-72d4.png" mime-type="image/png"/></media>
+<caption> Read from Measurement File Express VI </caption></figure>
+
+<para id="id11079543">Note: The following only applies to .LVM
+files.The EOF? output terminal of the Express VI indicates true if
+there is more data contained in the .LVM file. This value is
+especially useful when reading data that were saved from a Bode
+Analysis, or from any plot window with more than one graph display.
+Simply place the Read From Measurement File Express VI into a while
+loop, with the EOF? output terminal wired to the exit condition
+terminal.</para>
+<para id="id9971961">Note: The following only applies to .TDM
+files. To load .TDM files into LabVIEW which contain multiple
+graphs, lower level storage express VIs are required. Figure 2
+below gives a demonstration of how one might load multiple graphs
+from a .TDM file.</para>
+<figure id="id10914022"><media id="idp8980016" alt=""><image src="../../media/Graphic2-a159.png" mime-type="image/png"/></media>
+<caption> Loading Multiple Graphs from a .TDM File </caption></figure>
+
+</section>
+</section>
+<section id="id11028240">
+<title>LabVIEW Based Virtual Instruments in Multisim</title>
+<para id="id10642191">For further information on LabVIEW based
+Virtual Instruments in Multisim, consult the LabVIEW Virtual
+Instruments text in Section II.</para>
+</section>
+<section id="id10733248">
+<title>SignalExpress</title>
+<para id="id11203171">SignalExpress introduces an innovative
+approach to configuring your measurements using intuitive
+drag-and-drop steps that do not require code development. Unlike
+traditional benchtop measurement tools, SignalExpress combines the
+optimal balance of measurement functionality and ease-of-use to
+assist designers in streamlining a variety of applications:</para>
+<list list-type="bulleted" id="id10719716">
+<item>Design modeling.</item>
+<item>Design verification.</item>
+<item>Design characterization.</item>
+<item>Device validation.</item>
+<item>Automated test troubleshooting.</item>
+</list>
+<section id="id11143739">
+<title>Loading Multisim Data into SignalExpress</title>
+<para id="id10135436">To load simulated data into SignalExpress,
+simply use the Load from LVM step, select Add Step/Analog/Load
+and save Signals/Load from LVM. Choose the file name to load, and
+select the traces to import. Use the Domain field to choose from
+either Time, or Frequency data. Click close and run the
+SignalExpress workbench file to load the Multisim data.</para>
+<figure id="id10800747"><media id="idp8897328" alt=""><image src="../../media/Graphic3-ad2c.png" mime-type="image/png"/></media>
+<caption> SignalExpress Load from LVM Step </caption></figure>
+
+</section>
+</section>
+<section id="id11073984">
+<title>ELVIS</title>
+<para id="id11209316">National Instruments ELVIS is an ideal
+companion to any electronics lab that uses Multisim. ELVIS provides
+a breadboard prototyping environment, with built-in instruments
+including a Function Generator, Digital Multimeter (DMM),
+Oscilloscope, and Variable Power Supplies. The breadboard is
+detachable, allowing students to work on their projects and labs
+independently of the ELVIS unit.</para>
+<para id="id11209320">ELVIS provides LabVIEW-based software for
+interacting with the Virtual Instruments. These instruments can be
+modified to load Multisim data for rapid comparison of simulated
+and measured data.</para>
+<para id="id11318317">
+<figure id="id10212262"><media id="idp9052656" alt=""><image src="../../media/Graphic4-869f.png" mime-type="image/png"/></media>
+	<caption> NI ELVIS Bode Analysis Comparing MultiSim Data </caption></figure>
+</para>
+
+</section>
+</section>
+</content>
+</document>

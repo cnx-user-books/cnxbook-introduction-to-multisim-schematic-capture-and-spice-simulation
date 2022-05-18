@@ -1,0 +1,85 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+<title>Analyses of Circuit Simulations</title>
+<metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>9a9fbcd9-c69b-4281-864a-1f86c4453e5c</md:uuid>
+</metadata>
+<content>
+<section id="id11468870">
+<title>Analysis of Circuit Simulation</title>
+<para id="id8054082">Multisim offers many analyses, all of which
+utilize simulation to generate the data for the desired analysis.
+These analyses range from quite basic to extremely sophisticated,
+and often require one analysis to be performed as part of another.
+To configure and begin an analysis, select Simulate/Analyses, and
+choose the desired analysis. Figure 1 lists all available Multisim
+analyses. For each analysis, you configure the settings that tell
+Multisim how to exactly perform the desired analysis. In addition
+to the analyses provided by Multisim, user-defined analyses can be
+created based on user-entered SPICE commands.</para>
+<para id="id8560569">To prepare an analysis, configure the
+analysis-specific parameters, such as frequency range for an AC
+analysis. Output traces must also be selected here. It is
+especially important to name nets appropriately to avoid confusion
+when analyzing results. The results are displayed on a plot in
+Multisim’s Grapher and saved for use in the Postprocessor. Some
+results are also written to an audit trail, which can be
+viewed.</para>
+<figure id="element-885"><media id="idp104480" alt=""><image src="../../media/Graphic1-bc5c.png" mime-type="image/png"/></media>
+<caption> Available Analyses </caption></figure><figure id="element-50"><media id="idp2107712" alt=""><image src="../../media/Graphic2-34f8.png" mime-type="image/png"/></media>
+
+<caption> AC Analysis Options Dialog Box </caption></figure>
+</section>
+<section id="id8607232">
+<title>Grapher</title>
+<para id="id8718976">The Grapher is the primary tool used to view
+the results of simulations. Users can view the Grapher by clicking
+View/Grapher. Additionally, the Grapher opens automatically
+displayed upon when running an analysis. Elements of the Grapher
+window are detailed in Figure 3.</para>
+<para id="id11702046">The display shows both graphs and charts. In
+a graph, data are displayed as one or more traces along vertical
+and horizontal axes. In a chart, text data are displayed in rows
+and columns. The window is made up of several tabbed pages,
+depending on how many analyses, etc. have been run.</para>
+<para id="id9330271">Each page has two possible active areas which
+will be indicated by a red arrow: the entire page indicated with
+the arrow in the left margin near the page name or the chart/graph
+indicated with the arrow in the left margin near the active
+chart/graph. Some functions, such as cut/copy/paste, affect only
+the active area, so be sure the desired area has been selected
+before performing a function.</para>
+<figure id="id9274421"><media id="idm1101296" alt=""><image src="../../media/Graphic3-5780.png" mime-type="image/png"/></media>
+<caption> The Grapher </caption></figure>
+
+<para id="id9349482">Through the properties pages, the Grapher
+provides extensive customization. Axes scales, ranges, titles,
+colors, line styles, and many more options can be modified. To
+access the page or standard properties pages, click Edit/Page
+Propertiesor Edit/Properties (Figure 4 and Figure 5).</para>
+
+<figure id="element-162"><media id="idm8033360" alt=""><image src="../../media/Graphic4-31e5.png" mime-type="image/png"/></media>
+<caption> Grapher Page Properties</caption>
+				</figure><figure id="element-54"><media id="idm7406224" alt=""><image src="../../media/Graphic5-5eed.png" mime-type="image/png"/></media>
+
+<caption> Graph Properties</caption>
+</figure><para id="id8986825">Cursors can be moved by clicking and dragging
+them with the mouse. Additionally, right-clicking on a cursor, will
+display cursor movement options. Users can move the cursor to a
+particular X-Value, Y-Value, and local Maxima or Minima in either
+direction (Figure 6). Cursors, legends and graph lines can be
+toggled on or off by clicking the corresponding toolbar buttons
+(Figure 7).</para>
+<figure id="id4000505"><media id="idp1765344" alt=""><image src="../../media/Graphic6-5e1c.png" mime-type="image/png"/></media>
+<caption> Cursor Movement Options </caption></figure>
+
+<figure id="element-917"><media id="idm1193472" alt=""><image src="../../media/Graphic7-ff3b.png" mime-type="image/png"/></media>
+<caption> Grapher Toolbar </caption></figure><para id="id8871524">Results can also be exported to NI LabVIEW,
+Excel, or MathCAD. Graph data can also be saved to a variety of
+formats including NI LabVIEW Data (either .LVM or .TDM), comma
+separated values (.CSV), and plain text. To save results from the
+Grapher select File/Save As,and choose the desired file
+format.</para>
+
+
+</section>
+</content>
+</document>

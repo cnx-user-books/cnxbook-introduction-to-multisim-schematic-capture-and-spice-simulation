@@ -1,0 +1,44 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+<title>Using Electrical Rules Checking in National Instruments Multisim</title>
+<metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>186982cf-9f39-423a-80d0-b21cb2ab4c2e</md:uuid>
+</metadata>
+<content>
+<section id="id10807820">
+<title>Electrical Rules Check (ERC)</title>
+<para id="id10796436">The Electrical Rules Check creates and
+displays a report detailing connection errors (such as an output
+pin connected to a power pin) and unconnected pins. Once the
+circuit is wired, check the connections for correctness based on
+the rules set up in the Electrical Rules Check dialog box.</para>
+<para id="id10834595">Depending on your circuit, you may wish to
+have warnings issued if some types of connections are present,
+error messages for other connection types, and no warnings or
+errors for other connections. You control the type of connections
+that are reported when ERC is done by setting up the rules in the
+grid found in the ERC Rules tab of the Electrical Rules Check
+dialog box.</para>
+<para id="id11061887">ERC may be run over an entire design, or only
+across certain areas of a design. When an ERC is run, any anomalies
+are reported into a results pane at the bottom of the screen and
+the circuit is annotated with circular error markers. Clicking on
+an error will center and zoom on the error location.</para>
+<para id="id10808048">The ERC Options tab and ERC Rules tab are
+used to configure the ERC.</para>
+<para id="id10807937">To run the electrical rules check:</para>
+<para id="id10881864">1.Select Tools/Electrical Rules Check to
+display the Electrical Rules Check dialog box.</para>
+<para id="id10707277">2.Set up the reporting options using the ERC
+Options tab (Figure 1).</para>
+<para id="id10807949">3.Set up the rules using the ERC Options tab
+(Figure 2).</para>
+<para id="id11131348">4.Click OK. The results display in the format
+selected in the Output box in the ERC Options tab.</para>
+<figure id="id10993868"><media id="idp7147824" alt=""><image src="../../media/Graphic1-7db7.png" mime-type="image/png"/></media>
+<caption> ERC Options Tab </caption></figure>
+
+<figure id="id9493037"><media id="idp5226064" alt=""><image src="../../media/Graphic2-8300.png" mime-type="image/png"/></media>
+<caption> ERC Rules Tab </caption></figure>
+
+</section>
+</content>
+</document>

@@ -1,0 +1,131 @@
+<document xmlns="http://cnx.rice.edu/cnxml" xmlns:md="http://cnx.rice.edu/mdml">
+<title>Enhanced Educational Features for Teaching with National Instruments Multisim</title>
+<metadata><md:content-id>undefined</md:content-id><md:title/><md:uuid>8a00aaf2-2526-4af9-9e7f-d87e7182f851</md:uuid>
+</metadata>
+<content>
+<section id="id11012295">
+<title>Enhanced Features for Teaching</title>
+<section id="id11012388">
+<title>Overview</title>
+<para id="id11012422">Multisim is used in colleges and universities
+around the globe. It has become an essential academic tool.
+Academic features available in Multisim provide students with
+intuitive methods for easily exploring circuit theory.</para>
+<para id="id10876501">Because National Instruments products can be
+applied at the introductory, advanced and professional levels,
+students’ proficiency with the software will naturally grow over
+time, allowing them to focus on tackling increasingly complex
+content and projects, not on learning new tools over and over as
+their needs increase.</para>
+</section>
+<section id="id11012364">
+<title>Prototyping</title>
+<section id="id10874832">
+<title>3D Virtual Components</title>
+<para id="id10874859">Multisim includes a set of components
+specifically designed for students with little to no experience
+working with parts in real life. When placed on the schematic,
+these 3D virtual components appear exactly as they look in the real
+world. These components are available in the Basic group of the
+Master Database, under the 3D_VIRTUAL family.</para>
+<figure id="id10875049"><media id="idp13191648" alt=""><image src="../../media/Graphic1-f16b.png" mime-type="image/png"/></media>
+<caption> 3D Virtual Components </caption></figure>
+
+</section>
+<section id="id10875625">
+<title>Animated Components</title>
+<para id="id10875652">Animated components provide students with
+visual feedback on circuit operation during simulation. Examples of
+animated components include LEDs, 7-Segment displays, and other
+interactive components such as switches and potentiometers.
+Animated components are located throughout Multisim's
+databases.</para>
+</section>
+<section id="id10875676">
+<title>Rated Components</title>
+<para id="id11012516">Rated Componentshave tolerances just like
+real-world parts. Users can control the tolerance level by editing
+the part properties. If the power being dissipated by a virtual
+rated resistor is above the threshold, the resistor will "explode"
+on the schematic, and act as an open circuit. Rated
+Virtualcomponents can be found in the RATED_VIRTUAL family of the
+Basic group in the Master Database.</para>
+</section>
+<section id="id11290132">
+<title>3D Virtual Breadboard</title>
+<para id="id11012679">Multisim also includes a 3D Virtual
+Breadboard. The breadboard can be used to teach students important
+prototyping techniques. Nets and components will turn green on the
+schematic when their corresponding breadboard elements have been
+correctly wired. The breadboard also includes a Design Rules Check
+(DRC) and Connectivity Check.</para>
+<figure id="id11012707"><media id="idp8228032" alt=""><image src="../../media/Graphic2-ed73.png" mime-type="image/png"/></media>
+<caption> 3D Virtual Breadboard </caption></figure>
+
+</section>
+<section id="id11011865">
+<title>3D Virtual ELVIS</title>
+<para id="id11011887">In addition to the standard 3D Virtual
+Breadboard, students also have the option to create NI ELVIS
+schematics, which will have a corresponding 3D ELVIS
+representation. The virtual instruments included with NI ELVIS such
+as the function generator, oscilloscope, and variable power
+supplies have also been modeled. To create an NI ELVIS schematic,
+click File/New/ELVIS Schematic.</para>
+<para id="id11011891">To access the ELVIS virtual instruments,
+double-click on the terminals corresponding to the desired
+instrument.</para>
+<figure id="id11011977"><media id="idp8601504" alt=""><image src="../../media/Graphic3-ad8d.png" mime-type="image/png"/></media>
+<caption> 3D NI ELVIS Schematic </caption></figure>
+
+<figure id="id11012102"><media id="idp9402416" alt=""><image src="../../media/Graphic4-cb1e.png" mime-type="image/png"/></media>
+<caption> 3D Virtual NI ELVIS </caption></figure>
+
+</section>
+</section>
+<section id="id11266090">
+<title>Troubleshooting</title>
+<section id="id11266104">
+<title>Circuit Faults</title>
+<para id="id11266117">Instructors have the ability to insert faults
+into schematics, and have students hone their troubleshooting
+skills by trying to find the faults. The injected faults can be
+hidden to force students to apply fundamental techniques of
+troubleshooting. To add a fault into a component, double-click on
+the component, and select the Faults tab.</para>
+<para id="id11266142">Faults include open circuits on a particular
+terminal, short circuits between two pins of a component, and
+resistive losses measured in Ohms.</para>
+<figure id="id11266158"><media id="idm472304" alt=""><image src="../../media/Graphic5-ebb3.png" mime-type="image/png"/></media>
+<caption> Adding Faults to Components </caption></figure>
+
+</section>
+<section id="id11266250">
+<title>Black Boxes</title>
+<para id="id11266263">Instructors can also use subcircuits as black
+boxes, and engage students in more sophisticated circuit analysis
+techniques. To create a black box problem, use the information in
+Section I on creating subcircuits. Note:Hierarchical blocks should
+not be used as black boxes because the internal circuitry is stored
+in a separate file, which students would be able to view.</para>
+</section>
+<section id="id11011559">
+<title>Circuit Restrictions</title>
+<para id="id11011573">Circuit restrictions play a very important
+role when creating black box problems, or inserting circuit faults.
+Restrictions allow instructors to prevent students from seeing
+subcircuits, hide the faults, and limit the number or available
+components and instruments. In this manner, as an example, it is
+possible to force students to use an oscilloscope to make gain
+measurements when determining the bandwidths of filters, as a bode
+plotter or AC analysis may not always be available.</para>
+<para id="id11011799">Global and circuit restrictions are available
+under the Options menu. Restrictions are locked by password.</para>
+<figure id="id11011588"><media id="idp90368" alt=""><image src="../../media/Graphic6-8bc8.png" mime-type="image/png"/></media>
+<caption> Circuit Restrictions Dialog Box </caption></figure>
+
+</section>
+</section>
+</section>
+</content>
+</document>
